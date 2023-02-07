@@ -1,0 +1,56 @@
+body{
+    margin: 0%;
+    padding:0%;
+    background: radial-gradient(#1e87a5,#085066,black) no-repeat fixed;
+}
+button.clear{
+    background: #ff5722;
+    color: white;
+}
+table{
+    background: black;
+    padding: 7px 5px;
+    border: 6px solid red;
+    text-align: center;
+    padding-bottom: 0px;
+    box-shadow: 0px 0px 27px #0d5569;
+    border-radius: 10px;
+    margin-top: 90px;
+}
+button.equal{
+    width:65%;
+    background: #210b04;
+}
+button.equal:hover{
+    background: #000803;
+}
+
+input.text{
+    width: 450px;
+    height: 81px;
+    border:1px solid #000;
+    padding: 10px 20px;
+    font-size: 29px;
+    background-color:white;
+    font-weight: bold;
+    font-family: cursive;
+    margin-bottom: 25px;
+    margin-top: #dedede;
+}
+button{
+    padding: 10px;
+    width:100px;
+    height: 48px;
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: bold;
+    font-family: cursive;
+    background: orange;
+    cursor:pointer;
+    border: none;
+    color: #d23200;
+}
+button:hover{
+    background: #210b04;
+}
+

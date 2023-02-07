@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calc3.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="calculator">
+        <table>
+            <tr>
+                <td colspan="4">
+                    <input type="text" class="text" name="result" id="" placeholder="0"
+                    style="text-align: right;">
+                 </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" value="sin" onclick="sin()">sin</button>
+                    <button type="button" value="cos" onclick="cos()">cos</button>
+                    <button type="button" value="tan" onclick="tan()">tan</button>
+                    <button type="button" class="clear" value="sin" onclick="remv()">C</button>
+                </td>
+            </tr>
+            <tr>
+                <td><button type="button" value="x*x" onclick="square()">x <sup>2</sup></button>
+                 <button type="button" value="x*x*x" onclick="qubbed()">x <sup>3</sup></button>
+                <button type="button" value="sqrt2" onclick="sqrt2()">&radic;</button>
+                <button type="button" value="sqrt3" onclick="sqrt3()">&#8731;</button>
+            </td>
+            </tr>
+            <tr>
+                <td><button type="button" value="1" onclick="number(value)">1</button>
+                <button type="button" value="2" onclick="number(value)">2</button>
+                <button type="button" value="3" onclick="number(value)">3</button>
+                <button type="button" value="BACKSPC" onclick="BACKSPC()"><</button>
+            </td>
+                <!-- <td><button type="button" value="BACKSPC" onclick="BACKSPC()">-</button></td> -->
+            </tr>
+            <tr>
+                <td><button type="button" value="4" onclick="number(value)">4</button>
+                <button type="button" value="5" onclick="number(value)">5</button>
+                <button type="button" value="6" onclick="number(value)">6</button>
+                <button type="button" value="-" onclick="number(value)">-</button>
+                </td>
+                
+            </tr>
+            <tr>
+                <td><button type="button" value="7" onclick="number(value)">7</button>
+                <button type="button" value="8" onclick="number(value)">8</button>
+                <button type="button" value="9" onclick="number(value)">9</button>
+                <button type="button" value="/" onclick="number(value)">/</button>
+            </td>
+               
+
+            </tr>
+            <tr>
+                <td>
+                <button type="button" value="." onclick="number(value)">.</button>
+                <button type="button" value="0" onclick="number(value)">0</button>
+                <button type="button" value="*" onclick="number(value)">*</button>
+                <button type="button" value="%" onclick="number(value)">%</button>
+            </td>
+                
+            </tr>
+            <tr>
+
+            </tr>
+            <tr>
+                <td colspan="2"><button type="button" value="=" onclick="equal()" class="equal">=</button>
+                <button type="button" value="+" onclick="number(value)">+</button>
+            </td>
+            </tr>
+        </table>
+    </form>
+    
+    <script>
+        function sin(){
+
+            document.calculator.result.value =Math.sin(document.calculator.result.value);
+        }
+
+        function cos(){
+
+document.calculator.result.value =Math.cos(document.calculator.result.value);
+}
+
+function tan(){
+
+document.calculator.result.value =Math.tan(document.calculator.result.value);
+}
+function BACKSPC(){
+    var a=document.calculator.result.value=a.substr(0,a.lenght-1);
+}
+function square(){
+    document.calculator.result.value=math.pow(document.calculator.value,2);
+}
+function qubbed(){
+    document.calculator.result.value=math.pow(document.calculator.value,3);
+}
+function sqrt2(){
+    document.calculator.result.value=math.pow(document.calculator.result.value,1/2);
+}
+function sqrt3(){
+    document.calculator.result.value=math.pow(document.calculator.result.value,1/3)
+}
+function number(value){
+    document.calculator.result.value+=value;
+}
+function remv(){
+    document.calculator.result.value='';
+}
+function equal(){
+    document.calculator.result.value=eval(document.calculator.result.value)
+}
+    </script>
+</body>
+</html>

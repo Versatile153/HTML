@@ -1,0 +1,155 @@
+body{
+    text-align: center;
+}
+.clock{
+    width: 500px;
+    height: 500px;
+    background: #00ffff;
+    display: inline-block;
+    border: 10px solid #000;
+    border-radius: 50%;
+    padding: 20px;
+}
+.sec{
+    height: 250px;
+    width: 5px;
+    left: 245px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    background: #ff0000;
+    z-index: 3;
+    animation: sec_anims 60s linear infinite;
+}
+.min{
+    height: 250px;
+    width: 10px;
+    left: 242.5px;
+    background: #000;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    z-index: 2;
+    top: -250px;
+    animation: min_anims 600s linear infinite;
+
+}
+.hour{
+    height: 180px;
+    width: 14px;
+    left: 240px;
+    background: #000;
+    z-index: 1;
+    top: -430px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    background: #ff0000;
+    animation: hour_anims 60000s linear infinite;
+}
+.sec, .min, .hour{
+    line-height: 45px;
+    position: relative;
+    transform-origin: bottom;
+}
+@keyframes sec_anims{
+    from{
+        transform: rotatez(0deg);
+
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes min_anims{
+    from{
+        transform: rotatez(0deg);
+
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes hour_anims{
+    from{
+        transform: rotatez(0deg);
+
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+.one, .two, .three, .four, .five,.six ,.seven, .eight, .nine, .ten, .eleven, .twelve{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3.7em;
+    position: relative;
+    color: #000;
+    z-index: 0;
+}
+.one{
+    top: -648px;
+    left: 123px;
+}
+
+
+.two{
+    top: -629px;
+    left: 192px;
+}
+
+
+.three{
+    top: -603px;
+    left: 228px;
+}
+
+
+.four{
+    top: -564px;
+    left: 203px;
+}
+
+.five{
+    top: -552px;
+    left: 116px;
+}
+
+
+
+.six{
+    top: -580px;
+    
+}
+
+.seven{
+    top: -691px;
+    left: -111px;
+}
+
+.eight{
+    top: -840px;
+    left: -203px;
+}
+
+.nine{
+    top: -1016px;
+    left: -238px;
+}
+
+.ten{
+    top: -1181px;
+    left: -192px;
+}
+
+.eleven{
+    top: -1338px;
+    left: -123px;
+}
+
+.twelve{
+    top: -1450px;
+    /* left: -50px; */
+}
+
+
+
+

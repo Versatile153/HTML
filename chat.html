@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chat.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header"><h1>webchat</h1></div>
+
+        <div class="body">
+            <p class="message">hello</p>
+            <p class="user">
+               
+                
+                </p>
+                <button id="btn">delete</button>
+           
+        </div>
+
+        <div class="footer">
+            <form action="" id="form">
+                <input type="text" name="" id="task">
+                <button>send</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded',function(){
+            document.querySelector("#btn").style.display='none'
+            document.querySelector("#form").onsubmit=function(){
+            let task=    document.querySelector("#task").value;
+            let li =document.createElement("p");
+            li.innerHTML=task
+            document.querySelector(".user").append(li)
+            document.querySelector("#btn").style.display='block'
+            document.querySelector("#task").value=''
+
+            document.querySelector("#btn").onclick=function(){
+                const user=document.querySelector(".user").value
+                li.innerHTML=li.innerHTML.slice(0,-5)
+                if(li.innerHTML.length===0){
+                    document.querySelector("#btn").style.display='none'
+                }
+            }
+            return false
+
+ 
+            }
+        })
+    </script>
+</body>
+</html>
